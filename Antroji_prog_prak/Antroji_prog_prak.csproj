@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79FA3A2D-8629-402F-BD3D-A90A87D09F33}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Antroji_prog_prak</RootNamespace>
+    <AssemblyName>Antroji_prog_prak</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.27\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangeLO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLO.Designer.cs">
+      <DependentUpon>ChangeLO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeOG.Designer.cs">
+      <DependentUpon>ChangeOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="Firstview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firstview.Designer.cs">
+      <DependentUpon>Firstview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Foradmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foradmin.Designer.cs">
+      <DependentUpon>Foradmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forlector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forlector.Designer.cs">
+      <DependentUpon>Forlector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteS.Designer.cs">
+      <DependentUpon>DeleteS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteL.Designer.cs">
+      <DependentUpon>DeleteL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteO.Designer.cs">
+      <DependentUpon>DeleteO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteG.Designer.cs">
+      <DependentUpon>DeleteG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSG.Designer.cs">
+      <DependentUpon>ChangeSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarksCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarksCH.Designer.cs">
+      <DependentUpon>MarksCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupReg.Designer.cs">
+      <DependentUpon>GroupReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lector.Designer.cs">
+      <DependentUpon>Lector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMark.Designer.cs">
+      <DependentUpon>NewMark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjectReg.Designer.cs">
+      <DependentUpon>ObjectReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectorReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectorReg.Designer.cs">
+      <DependentUpon>LectorReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentReg.Designer.cs">
+      <DependentUpon>StudentReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLO.resx">
+      <DependentUpon>ChangeLO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeOG.resx">
+      <DependentUpon>ChangeOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteG.resx">
+      <DependentUpon>DeleteG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteL.resx">
+      <DependentUpon>DeleteL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteO.resx">
+      <DependentUpon>DeleteO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteS.resx">
+      <DependentUpon>DeleteS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firstview.resx">
+      <DependentUpon>Firstview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foradmin.resx">
+      <DependentUpon>Foradmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forlector.resx">
+      <DependentUpon>Forlector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeSG.resx">
+      <DependentUpon>ChangeSG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupReg.resx">
+      <DependentUpon>GroupReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lector.resx">
+      <DependentUpon>Lector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectorReg.resx">
+      <DependentUpon>LectorReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarksCH.resx">
+      <DependentUpon>MarksCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMark.resx">
+      <DependentUpon>NewMark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjectReg.resx">
+      <DependentUpon>ObjectReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentReg.resx">
+      <DependentUpon>StudentReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
